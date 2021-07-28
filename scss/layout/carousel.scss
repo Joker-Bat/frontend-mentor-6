@@ -1,0 +1,40 @@
+.carousel {
+	margin: 8rem auto;
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	
+	&__item {
+		padding: 2rem;
+		margin: 2rem 2rem;
+		background-color: $color-gray-lignt;
+		font-size: 1.4rem;
+
+		img {
+			width: 6rem;
+			margin: 0 auto;
+			margin-bottom: 1rem;
+		}
+
+		h1 {
+			font-size: 1.6rem;
+			color: $color-dark-blue;
+			text-align: center;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			color: $color-gray-dark;
+		}
+	}
+
+	&__btn {
+		margin-top: 3rem;
+		align-self: center;
+	}
+}
+

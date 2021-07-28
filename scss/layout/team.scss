@@ -1,0 +1,44 @@
+.team {
+  display: flex;
+  padding: 8rem;
+  justify-content: space-between;
+  background: url("../images/bg-simplify-section-desktop.svg"),
+    rgba($color-primary-red, 0.95);
+  background-size: cover;
+  background-position: center;
+
+  @include respond(tablet) {
+    padding: 6rem 3rem;
+  }
+
+  @include respond(mobile) {
+    background: url("../images/bg-simplify-section-mobile.svg"),
+      rgba($color-primary-red, 0.95);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: $color-light-red;
+    font-size: 3rem;
+
+    @include respond(tablet) {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    @include respond(mobile) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__btn {
+    background-color: $color-light-red;
+    color: $color-primary-red;
+
+    &:hover {
+      filter: brightness(100%);
+    }
+  }
+}

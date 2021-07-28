@@ -1,0 +1,21 @@
+
+.btn {
+    display: block;
+    background-color: $color-primary-red;
+    color: $color-light-red;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    transition: filter .2s,
+                transform .2s,
+                box-shadow .2s;
+
+    &:hover {
+        filter: brightness(150%);
+        box-shadow: 0 1.3rem 1rem -1rem rgba($color-dark-blue, .4);
+        transform: translateY(-.2rem);
+    }
+}

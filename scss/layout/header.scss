@@ -1,0 +1,81 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 8rem;
+
+  @include respond(tablet) {
+    padding: 3rem 5rem;
+  }
+
+  @include respond(mobile) {
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+  &__heading {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include respond(mobile) {
+      flex-basis: 100%;
+      flex-basis: auto;
+      text-align: center;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+
+    &--primary {
+      width: 90%;
+      font-size: 5rem;
+      line-height: 1.2;
+      color: $color-primary-blue;
+      margin-bottom: 2rem;
+
+      @include respond(tablet) {
+        font-size: 4rem;
+        width: 100%;
+      }
+    }
+
+    &--description {
+      font-size: 1.4rem;
+      width: 70%;
+      color: $color-gray-dark;
+      margin-bottom: 3rem;
+
+      @include respond(tablet) {
+        width: 80%;
+      }
+    }
+  }
+
+  &__illustrator {
+    position: relative;
+    flex-basis: 50%;
+
+    @include respond(mobile) {
+      flex-basis: 100%;
+    }
+
+    &--image {
+      width: 100%;
+
+      &__wave {
+        width: 120%;
+        position: absolute;
+        top: -60%;
+        right: -45%;
+        z-index: -1;
+
+        @include respond(mobile) {
+          top: -150%;
+          right: -50%;
+        }
+      }
+    }
+  }
+}
